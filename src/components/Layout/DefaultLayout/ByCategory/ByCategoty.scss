@@ -1,0 +1,25 @@
+.wrapper {
+    width: 100%;
+}
+
+.container-row {
+        display: flex;
+        flex-direction: column;
+        padding: 54px 0;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+    h5 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+.arrow-row {
+    display: flex;
+}

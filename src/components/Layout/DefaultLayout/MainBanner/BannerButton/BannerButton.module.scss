@@ -1,0 +1,124 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    flex: 1;
+}
+.rightTop {
+    display: flex;
+    img {
+        width: 360px;
+        height: 343px;
+    }
+}
+
+.rightTop-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 32px;
+    h3 {
+        font-weight: 500;
+        font-size: 49px;
+        line-height: 40px;
+        color: #000000;
+    }
+    p {
+        color: #909090;
+        font-weight: 500px;
+        font-size: 14px;
+        line-height: 24px;
+        padding-top: 18px;
+    }
+}
+
+.rowRightButton {
+    display: flex;
+}
+
+.rightButton-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.rightButton-leftContent {
+    flex: 1;
+    margin-left: 62px;
+    h3 {
+        font-weight: 300;
+        font-size: 29px;
+        line-height: 40px;
+        b {
+            font-weight: 500;
+        }
+    }
+    p {
+        margin-top: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #909090;
+    }
+}
+
+.rightButton-right {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    background-color: #353535;
+}
+
+.rightButton-rightContent {
+    margin-left: 34px;
+    h3 {
+        color: white;
+        font-weight: 300;
+        font-size: 29px;
+        line-height: 40px;
+        b {
+            font-weight: 500;
+        }
+    }
+    p {
+        color: #909090;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 8px;
+    }
+}
+
+.BannerButton-Left {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.BannerButton-LeftLeft {
+    margin-left: 86px;
+    h2 {
+        font-weight: 200;
+        font-size: 64px;
+        line-height: 56px;
+        b {
+            font-weight: 500;
+        }
+    }
+    p {
+        margin-top: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: #909090;
+        padding-bottom: 18px;
+    }
+    a {
+        color: #000000;
+        border: 1px solid #000000;
+        background-color: #fff;
+    }
+}
