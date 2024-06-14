@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleXmark, faMagnifyingGlass, faSpinner } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCircleXmark, faMagnifyingGlass, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import images from '~/assets/images';
@@ -7,6 +7,29 @@ import images from '~/assets/images';
 const cx = classNames.bind(styles);
 
 function Header() {
+    const menu = [
+        {
+            id: 1,
+            name: 'Home',
+            slug: 'home',
+        },
+        {
+            id: 2,
+            name: 'About',
+            slug: 'About',
+        },
+        {
+            id: 3,
+            name: 'Blog',
+            slug: 'blog',
+        },
+        {
+            id: 4,
+            name: 'Contact',
+            slug: 'Contact',
+        },
+    ];
+
     return (
         <header className={cx('wrapper')}>
             <div className={cx('container')}>
@@ -21,29 +44,21 @@ function Header() {
                         <input className={cx('search-input')} placeholder="Tìm Kiếm"></input>
                     </form>
                     <ul className={cx('menu')}>
-                        <li className={cx('home')}>
-                            <a href="/">Home</a>
-                        </li>
-                        <li className={cx('about')}>
-                            <a href="/about">About</a>
-                        </li>
-                        <li className={cx('contact')}>
-                            <a href="/contact">Contact</a>
-                        </li>
-                        <li className={cx('blog')}>
-                            <a href="/blog">Blog</a>
-                        </li>
+                        {menu.map((item) => (
+                            <li className={cx('menu-item')} key={item.id}>
+                                <a href={item.slug}>{item.name}</a>
+                            </li>
+                        ))}
                     </ul>
                     <div className={cx('icons')}>
-                        <button>
-                            <img className={cx('favorites')} src={images.favorites} alt="" />
+                        <button className={cx('icon-item')}>
+                            <img src={images.favorites} alt="" />
                         </button>
-                        <button>
-                            <img className={cx('cart')} src={images.cart} alt="" />
+                        <button className={cx('icon-item')}>
+                            <img src={images.cart} alt="" />
                         </button>
-
-                        <button>
-                            <img className={cx('vector')} src={images.vector} alt="" />
+                        <button className={cx('icon-item')}>
+                            <img src={images.user} alt="" />
                         </button>
                     </div>
                 </div>
