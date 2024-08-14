@@ -1,0 +1,9 @@
+.wrap {
+    display: flex;
+    .sidebar {
+        flex: 1;
+    }
+    .main {
+        flex: 3;
+    }
+}

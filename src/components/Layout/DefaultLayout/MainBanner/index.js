@@ -1,6 +1,5 @@
 import styles from './MainBanner.module.scss';
 import classNames from 'classnames/bind';
-import images from '~/assets/images';
 import BannerTop from '../MainBanner/BannerTop';
 import BannerButton from '../MainBanner/BannerButton';
 
